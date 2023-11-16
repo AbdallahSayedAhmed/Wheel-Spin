@@ -76,6 +76,14 @@ function spin() {
     confetti.render();
   }, 6500);
 
+  // Set another timeout to stop the confetti after 5 seconds
+  setTimeout(() => {
+    applause.pause();
+    overlay.classList.remove("active");
+    popup.classList.remove("active");
+    document.querySelector("#my-canvas").style.display = "none";
+  }, 11500);
+
   setTimeout(() => {
     wheel.style.setProperty("transition", "initial");
     wheel.style.transform = "rotate(90deg)";

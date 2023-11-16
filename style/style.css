@@ -377,16 +377,28 @@ audio {
   background: #f5f5f5;
 }
 
+.qrcode p {
+  margin-bottom: 10px;
+  color: #64a343;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.15);
+}
+
 .qrcode {
   position: absolute;
   bottom: 49px;
-  right: 170px;
-  width: 50px;
+  display: flex;
+  right: 225px;
+  flex-basis: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .qrcode img {
   width: fit-content;
-  height: 152px;
+  height: 229px;
   border: 3px solid #64a343;
   box-shadow: 0px 0 5px 0px #000000;
 }

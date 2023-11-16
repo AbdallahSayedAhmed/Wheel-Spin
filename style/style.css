@@ -389,11 +389,12 @@ audio {
   position: absolute;
   bottom: 49px;
   display: flex;
-  right: 225px;
+  right: 54px;
   flex-basis: 50px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 
 .qrcode img {

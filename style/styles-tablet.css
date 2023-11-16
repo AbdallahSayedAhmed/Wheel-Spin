@@ -107,4 +107,21 @@
   .container .wheel .num3 {
     word-spacing: -5px;
   }
+  .qrcode img {
+    height: 84px;
+  }
+
+  .qrcode {
+    bottom: 36px;
+    right: 82px;
+  }
+}
+
+.qrcode img {
+  height: 99px;
+}
+
+.qrcode {
+  bottom: 48px;
+  right: 98px;
 }

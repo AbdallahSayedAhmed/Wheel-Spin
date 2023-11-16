@@ -17,6 +17,33 @@
     width: 650px;
     height: 650px;
   }
+  .container .wheel .jobName span {
+    font-size: 1.5em;
+  }
+
+  .container .wheel .num1 + img {
+    top: 166px;
+    left: 48px;
+  }
+  .container .wheel .num5 + img {
+    top: 161px;
+    left: 32px;
+  }
+  .container .wheel .jobName img {
+    width: 111px;
+  }
+  .container .wheel .num2 + img {
+    top: 143px;
+    left: 45px;
+  }
+  .container .wheel .num3 + img {
+    top: 67px;
+    left: 164px;
+  }
+  .container .wheel .num4 + img {
+    top: 60px;
+    left: 166px;
+  }
 }
 @media screen and (min-width: 1400px) and (max-width: 1599px) {
   .logo img {
@@ -25,6 +52,32 @@
   .container {
     width: 650px;
     height: 650px;
+  }
+  .container .wheel .jobName span {
+    font-size: 1.5em;
+  }
+  .container .wheel .jobName img {
+    width: 111px;
+  }
+  .container .wheel .num1 + img {
+    top: 166px;
+    left: 48px;
+  }
+  .container .wheel .num5 + img {
+    top: 161px;
+    left: 32px;
+  }
+  .container .wheel .num2 + img {
+    top: 143px;
+    left: 45px;
+  }
+  .container .wheel .num3 + img {
+    top: 67px;
+    left: 164px;
+  }
+  .container .wheel .num4 + img {
+    top: 60px;
+    left: 166px;
   }
 }
 
@@ -35,18 +88,24 @@
   }
 }
 
-.container .wheel .num5 + img {
-  top: 215px;
-  left: 45px;
-}
-.container .wheel .num1 + img {
-  top: 228px;
-}
-.container .wheel .num2 + img {
-  top: 191px;
-  left: 60px;
-}
+@media screen and (min-width: 1600px) {
+  .container .wheel .num5 + img {
+    top: 196px;
+    left: 37px;
+  }
+  .container .wheel .num1 + img {
+    top: 228px;
+  }
+  .container .wheel .num2 + img {
+    top: 172px;
+    left: 60px;
+  }
 
-.container .wheel .jobName img {
-  width: 138px;
+  .container .wheel .jobName img {
+    width: 138px;
+  }
+  .container .wheel .num4 + img {
+    top: 66px;
+    left: 206px;
+  }
 }

@@ -13,10 +13,18 @@
   .logo img {
     height: 56px;
   }
+  .container {
+    width: 650px;
+    height: 650px;
+  }
 }
 @media screen and (min-width: 1400px) and (max-width: 1599px) {
   .logo img {
     height: 70px;
+  }
+  .container {
+    width: 650px;
+    height: 650px;
   }
 }
 

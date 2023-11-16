@@ -74,7 +74,7 @@ function spin() {
     canvas.style.display = "block";
     var confettiSettings = { target: "my-canvas" };
     var confetti = new ConfettiGenerator(confettiSettings);
-    console.log(confetti);
+
     confetti.render();
   }, 6500);
 

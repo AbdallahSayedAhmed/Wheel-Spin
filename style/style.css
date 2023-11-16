@@ -180,6 +180,13 @@ body {
   cursor: pointer;
 }
 
+.disable-fun {
+  pointer-events: none;
+  /* You can also change the appearance to indicate that the button is disabled */
+  /* Example: reduce opacity */
+  cursor: not-allowed; /* Example: change cursor to indicate not allowed */
+}
+
 .wheel.animate:after {
   animation: animateArrow 0.7s ease infinite;
   -webkit-animation: animateArrow 0.7s ease infinite;

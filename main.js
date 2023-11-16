@@ -1,17 +1,15 @@
-buttonElement = document.querySelector(".fullWindow");
-container = document.querySelector(".container");
+const buttonElement = document.querySelector(".fullWindow");
+const container = document.querySelector(".container");
 const wheel = document.querySelector(".wheel");
-overlay = document.querySelector(".overlay");
-canvas = document.querySelector("#my-canvas");
-popup = document.querySelector(".popup");
-title = document.querySelector(".title");
-const mq_laptop_view_min_width = window.matchMedia("(min-width: 1024px)");
-const mq_laptop_view_max_width = window.matchMedia("(max-width: 1440px)");
-const mq_4k_min_width = window.matchMedia("(min-width:2560px)");
+const overlay = document.querySelector(".overlay");
+const canvas = document.querySelector("#my-canvas");
+const popup = document.querySelector(".popup");
+const title = document.querySelector(".title");
+const button = document.querySelector(".spinBtn");
 
 function shuffle(array) {
   var currentIndex = array.length;
-  randomIndex = 0;
+  let randomIndex;
 
   while (0 !== currentIndex) {
     randomIndex = Math.floor(Math.random() * currentIndex);
@@ -26,7 +24,8 @@ function shuffle(array) {
 
 function spin() {
   wheell.play();
-
+  wheel.classList.add("disable-fun");
+  button.classList.add("disable-fun");
   // const container = document.querySelector(".container");
   let selectItem = "";
 
@@ -65,6 +64,8 @@ function spin() {
   my_position_interval = setTimeout(() => {
     // alert
     applause.play();
+    wheel.classList.remove("disable-fun");
+    button.classList.remove("disable-fun");
 
     overlay.classList.add("active");
     popup.classList.add("active");
@@ -73,6 +74,7 @@ function spin() {
     canvas.style.display = "block";
     var confettiSettings = { target: "my-canvas" };
     var confetti = new ConfettiGenerator(confettiSettings);
+    console.log(confetti);
     confetti.render();
   }, 6500);
 
@@ -81,7 +83,7 @@ function spin() {
     applause.pause();
     overlay.classList.remove("active");
     popup.classList.remove("active");
-    document.querySelector("#my-canvas").style.display = "none";
+    canvas.style.display = "none";
   }, 11500);
 
   setTimeout(() => {
@@ -94,7 +96,7 @@ function removeOverlay() {
   applause.pause();
   overlay.classList.remove("active");
   popup.classList.remove("active");
-  document.querySelector("#my-canvas").style.display = "none";
+  canvas.style.display = "none";
 }
 
 function getFullscreenElement() {

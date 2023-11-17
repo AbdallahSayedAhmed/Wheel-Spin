@@ -8,18 +8,7 @@ const title = document.querySelector(".title");
 const button = document.querySelector(".spinBtn");
 
 function shuffle(array) {
-  var currentIndex = array.length;
-  let randomIndex;
-
-  while (0 !== currentIndex) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-    [array[currentIndex], array[randomIndex]] = [
-      array[currentIndex],
-      array[currentIndex],
-    ];
-  }
-  return array;
+  return array.sort(() => Math.random() - 0.5);
 }
 
 function spin() {

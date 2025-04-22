@@ -96,6 +96,11 @@ body {
   width: fit-content;
   height: 93px;
 }
+@media screen and (min-width: 1023px) and (max-width: 1199px) {
+  .logo img {
+    height: 55px;
+  }
+}
 
 .container {
   position: relative;
@@ -198,12 +203,12 @@ body {
   height: 50%;
   background: var(--clr);
   transform-origin: bottom right;
-  transform: rotate(calc(72deg * var(--i)));
-  -webkit-transform: rotate(calc(72deg * var(--i)));
-  -moz-transform: rotate(calc(72deg * var(--i)));
-  -ms-transform: rotate(calc(72deg * var(--i)));
-  -o-transform: rotate(calc(72deg * var(--i)));
-  clip-path: polygon(0 0, 82% 0, 100% 100%, 0 82%);
+  transform: rotate(calc(45deg * var(--i)));
+  -webkit-transform: rotate(calc(45deg * var(--i)));
+  -moz-transform: rotate(calc(45deg * var(--i)));
+  -ms-transform: rotate(calc(45deg * var(--i)));
+  -o-transform: rotate(calc(45deg * var(--i)));
+  clip-path: polygon(0 0, 58% 0, 100% 100%, 0 58%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,29 +237,34 @@ body {
 }
 
 .container .wheel .num1 + img {
-  top: 202px;
-  left: 81px;
-  rotate: 45deg;
-}
-.container .wheel .num2 + img {
-  top: 183px;
-  left: 73px;
-  rotate: 35deg;
+  top: 57px;
+  left: 148px;
+  rotate: -55deg;
 }
 .container .wheel .num3 + img {
-  top: 121px;
-  left: 222px;
-  rotate: 170deg;
-}
-.container .wheel .num4 + img {
-  top: 107px;
-  left: 235px;
-  rotate: 234deg;
+  top: 70px;
+  left: 181px;
+  rotate: 4deg;
 }
 .container .wheel .num5 + img {
-  top: 213px;
+  top: 168px;
+  left: 58px;
+  rotate: 211deg;
+}
+.container .wheel .num6 + img {
+  top: 178px;
+  left: 52px;
+  rotate: 382deg;
+}
+.container .wheel .num8 + img {
+  top: 174px;
   left: 74px;
-  rotate: 302deg;
+  rotate: 158deg;
+}
+
+.container .wheel .num1 {
+  top: 8%;
+  right: -6%;
 }
 
 .container .wheel .num2 {
@@ -262,14 +272,20 @@ body {
   right: -12%;
 }
 .container .wheel .num3 {
-  top: 14%;
-  left: 11%;
+  rotate: 13deg;
+  top: 8%;
+  left: 4%;
 }
 .container .wheel .num4 {
-  top: 14%;
+  top: 8%;
   left: 10%;
 }
 .container .wheel .num5 {
+  top: 10%;
+  left: 11%;
+}
+
+.container .wheel .num7 {
   top: 8%;
   left: 10%;
 }
@@ -402,6 +418,11 @@ audio {
   height: 229px;
   border: 3px solid #64a343;
   box-shadow: 0px 0 5px 0px #000000;
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .qrcode img {
+    height: 148px;
+  }
 }
 
 #my-canvas {

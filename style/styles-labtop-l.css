@@ -14,36 +14,41 @@
     height: 56px;
   }
   .container {
-    width: 650px;
-    height: 650px;
+    width: 700px;
+    height: 700px;
   }
   .container .wheel .jobName span {
     font-size: 1.5em;
   }
 
   .container .wheel .num1 + img {
-    top: 166px;
-    left: 48px;
+    top: 42px;
+    left: 116px;
+    rotate: -55deg;
+  }
+  .container .wheel .num3 + img {
+    top: 71px;
+    left: 154px;
+    rotate: 8deg;
   }
   .container .wheel .num5 + img {
-    top: 161px;
-    left: 32px;
+    top: 125px;
+    left: 42px;
   }
   .container .wheel .jobName img {
     width: 111px;
   }
-  .container .wheel .num2 + img {
-    top: 143px;
-    left: 45px;
+  .container .wheel .num6 + img {
+    top: 135px;
+    left: 38px;
+    rotate: 44deg;
   }
-  .container .wheel .num3 + img {
-    top: 67px;
-    left: 164px;
+  .container .wheel .num8 + img {
+    top: 63px;
+    left: 129px;
+    rotate: -194deg;
   }
-  .container .wheel .num4 + img {
-    top: 60px;
-    left: 166px;
-  }
+  
 }
 @media screen and (min-width: 1400px) and (max-width: 1599px) {
   .logo img {
@@ -109,3 +114,4 @@
     left: 206px;
   }
 }
+

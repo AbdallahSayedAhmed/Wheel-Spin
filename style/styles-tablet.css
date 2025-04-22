@@ -25,9 +25,42 @@
   -o-transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 694px){
+.qrcode{
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+}
+.qrcode p{
+  font-size: 1.3rem;
+}
+}
+@media screen and (min-width: 593px){
+  .container{
+    width:550px;
+    height:550px;
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 569px){
+  .container{
+    width:400px;
+    height:400px;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .container{
+    width:450px;
+    height:450px;
+  }
+
+}
+
 .container .wheel .jobName span {
-  font-size: 0.7em;
-  font-weight: 400;
+  font-size: 0.9em;
+  font-weight: 600;
 }
 .container .spinBtn {
   width: 30px;
@@ -49,30 +82,59 @@
 }
 
 .container .wheel .jobName img {
-  width: 48px;
+  width: 34px;
 }
 
 .container .wheel .num1 + img {
-  top: 90px;
-  left: 34px;
+  top: 81px;
+  left: 42px;
 }
-.container .wheel .num2 + img {
-  top: 82px;
-  left: 28px;
+.container .wheel .num6 + img {
+  top: 86px;
+  left: 38px;
   rotate: 43deg;
 }
+.container .wheel .num6 {
+  top: 5%;
+  left: 5%;
+}
 .container .wheel .num3 + img {
-  top: 49px;
+  top: 59px;
   left: 97px;
 }
-.container .wheel .num4 + img {
-  top: 90px;
-  left: 25px;
-  rotate: 204deg;
+.container .wheel .num8 + img {
+  top: 85px;
+  left: 47px;
+  rotate: 163deg;
 }
 .container .wheel .num5 + img {
-  top: 92px;
-  left: 29px;
+  top: 79px;
+  left: 38px;
+}
+
+
+@media screen and (min-width: 460px) and (max-width: 569px){
+  .container .wheel .num1 + img {
+    top: 94px;
+    left: 39px;
+    rotate: -82deg;
+  }
+  .container .wheel .num6 + img {
+    top: 98px;
+    left: 44px;
+  }
+
+  .container .wheel .num8 + img {
+    top: 99px;
+    rotate: 152deg;
+  }
+  .container .wheel .num5 + img {
+    top: 91px;
+  }
+  .container .wheel .num5  {
+    top: 12%;
+    left: 12%;
+  }
 }
 
 .fullWindow {
@@ -92,23 +154,57 @@
   font-size: 16px;
 }
 
-@media (min-width: 425px) {
-  .container {
-    width: 364px;
-    height: 364px;
-  }
-  .container .wheel .jobName img {
-    width: 55px;
+@media (min-width: 695px){
+  .container{
+    width: 650px;
+    height: 650px;
   }
   .container .wheel .jobName span {
-    font-size: 0.8em;
-    font-weight: 400;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 695px) {
+  .container .wheel .jobName img {
+    width: 55px;
   }
   .container .wheel .num3 {
     word-spacing: -5px;
   }
   .qrcode img {
     height: 84px;
+  }
+
+  .container .wheel .num6{
+    top: 5%;
+    left: 5%;
+  }
+
+  .container .wheel .jobName img{
+    width: 78px;
+  }
+  .container .wheel .num1 + img {
+    top: 75px;
+    left: 148px;
+  }
+  .container .wheel .num3 + img {
+    top: 75px;
+    left: 148px;
+  }
+  .container .wheel .num5 + img {
+    top: 143px;
+    left: 50px;
+  }
+  .container .wheel .num6 + img {
+    top: 157px;
+    left: 58px;
+    rotate: 25deg;
+  }
+  .container .wheel .num8 + img {
+    top: 75px;
+    left: 148px;
+    rotate: -192deg;
   }
 
   .qrcode {
@@ -122,6 +218,6 @@
 }
 
 .qrcode {
-  bottom: 48px;
-  right: 98px;
+  bottom: 27px;
+  right: 34px;
 }

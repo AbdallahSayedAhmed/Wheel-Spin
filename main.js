@@ -1,3 +1,4 @@
+
 const buttonElement = document.querySelector(".fullWindow");
 const container = document.querySelector(".container");
 const wheel = document.querySelector(".wheel");
@@ -6,24 +7,24 @@ const canvas = document.querySelector("#my-canvas");
 const popup = document.querySelector(".popup");
 const title = document.querySelector(".title");
 const button = document.querySelector(".spinBtn");
+const description = document.querySelector(".description");
 
-// function shuffle(array) {
-//   return array.sort(() => Math.random() - 0.5);
-// }
+// Improved shuffle function with Fisher-Yates algorithm
 function shuffle(array) {
-  let currentIndex = array.length,
-    randomIndex;
+  let currentIndex = array.length, randomIndex;
 
-  // While there remain elements to shuffle.
+
+  
+  // While there remain elements to shuffle
   while (currentIndex > 0) {
-    // Pick a remaining element.
+    // Pick a remaining element
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
 
-    // And swap it with the current element.
+    // And swap it with the current element
     [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex],
-      array[currentIndex],
+      array[randomIndex], 
+      array[currentIndex]
     ];
   }
 
@@ -34,50 +35,73 @@ function spin() {
   wheell.play();
   wheel.classList.add("disable-fun");
   button.classList.add("disable-fun");
-  // const container = document.querySelector(".container");
+  
   let selectItem = "";
+  
+  // Define rotation values for each of the 8 segments
+  // Each segment is 45 degrees (360 / 8), and we add multiple full rotations
+  // for a satisfying spin effect (1800 degrees = 5 full rotations + segment offset)
 
-  let iT_Manager = shuffle([2110, 2520, 2880]); //1800, 2160, 2520
-  let chief_Executive_Officer = shuffle([2088, 2448, 2808]);
-  let human_Resource_Manager = shuffle([2016, 2376, 2736]);
-  let chief_Information_Officer = shuffle([1944, 2304, 2664]);
-  let head_of_corporate_Communications = shuffle([1872, 2232, 2592]);
+  // Rotation values for each segment - adding 6-8 full rotations (2160-2880 degrees)
+  // plus the offset for each specific segment
+  const segment1 = shuffle([2160 + 0, 2520 + 0, 2880 + 0]);     // Customer First
+  const segment2 = shuffle([2160 + 45, 2520 + 45, 2880 + 45]);  // Resilience
+  const segment3 = shuffle([2160 + 90, 2520 + 90, 2880 + 90]);  // Trust
+  const segment4 = shuffle([2160 + 135, 2520 + 135, 2880 + 135]); // Innovation
+  const segment5 = shuffle([2160 + 180, 2520 + 180, 2880 + 180]); // Service Excellence
+  const segment6 = shuffle([2160 + 225, 2520 + 225, 2880 + 225]); // Development
+  const segment7 = shuffle([2160 + 270, 2520 + 270, 2880 + 270]); // Sustainability
+  const segment8 = shuffle([2160 + 315, 2520 + 315, 2880 + 315]); // Community
 
+  // Combine all segment rotations and shuffle to pick a random one
   let results = shuffle([
-    iT_Manager[0],
-    chief_Executive_Officer[0],
-    human_Resource_Manager[0],
-    chief_Information_Officer[0],
-    head_of_corporate_Communications[0],
+    segment1[0], segment2[0], segment3[0], segment4[0],
+    segment5[0], segment6[0], segment7[0], segment8[0]
   ]);
-
-  if (iT_Manager.includes(results[0])) selectItem = "It Manager";
-  if (chief_Executive_Officer.includes(results[0]))
-    selectItem = "Chief Executive Officer";
-  if (human_Resource_Manager.includes(results[0]))
-    selectItem = "Human Resource Manager";
-  if (chief_Information_Officer.includes(results[0]))
-    selectItem = "Chief Information Officer";
-  if (head_of_corporate_Communications.includes(results[0]))
-    selectItem = "Head of corporate Communications";
-
+  
+  // Select the random result from the array
+  const selectedRotation = results[0];
+  
+  // Determine which segment was selected based on the rotation value
+  // We need to normalize the rotation by removing complete rotations (modulo 360)
+  // and then determine which 45-degree segment it falls into
+  const normalizedRotation = selectedRotation % 360;
+  const segmentIndex = Math.floor(normalizedRotation / 45);
+  
+  // Map the segment index to the corresponding value
+  const segmentValues = [
+    "Customer First",     // Segment 1
+    "Community",         // Segment 2
+    "Sustainability",    // Segment 3
+    "Development",       // Segment 4
+    "Service Excellence",// Segment 5
+    "Innovation",        // Segment 6
+    "Trust",             // Segment 7
+    "Resilience"         // Segment 8
+  ];
+  
+  selectItem = segmentValues[segmentIndex];
+  
+  // Apply the rotation to the wheel
   wheel.style.setProperty("transition", "all ease 6s");
-  wheel.style.transform = "rotate(" + results[0] + "deg)";
+  wheel.style.transform = "rotate(" + selectedRotation + "deg)";
   wheel.classList.remove("animate");
-
+  
   setTimeout(() => {
     wheel.classList.add("animate");
   }, 6000);
 
-  my_position_interval = setTimeout(() => {
-    // alert
+  // Show the results after the wheel stops spinning
+  let my_position_interval = setTimeout(() => {
+    // Play sound and show overlay
     applause.play();
     wheel.classList.remove("disable-fun");
     button.classList.remove("disable-fun");
 
     overlay.classList.add("active");
     popup.classList.add("active");
-    title.innerText = `${selectItem} position.`;
+    title.innerText = "Congratulations!";
+    description.innerHTML = `<p>You've landed on <strong>${selectItem}</strong>!</p>`;
 
     canvas.style.display = "block";
     var confettiSettings = { target: "my-canvas" };
@@ -94,9 +118,10 @@ function spin() {
     canvas.style.display = "none";
   }, 11500);
 
+  // Reset the wheel position after showing the result
   setTimeout(() => {
     wheel.style.setProperty("transition", "initial");
-    wheel.style.transform = "rotate(90deg)";
+    wheel.style.transform = "rotate(0deg)";
   }, 7000);
 }
 
@@ -116,7 +141,6 @@ function getFullscreenElement() {
     document.oFullscreenElement
   );
 }
-//##################################
 
 function fullWindowMood() {
   if (getFullscreenElement()) {
@@ -146,3 +170,5 @@ if (!document.fullscreenElement) {
     buttonElement.style.visibility = "visible";
   });
 }
+
+

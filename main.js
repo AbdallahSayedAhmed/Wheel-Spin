@@ -100,8 +100,8 @@ function spin() {
 
     overlay.classList.add("active");
     popup.classList.add("active");
-    title.innerText = "Congratulations!";
-    description.innerHTML = `<p>You've landed on <strong>${selectItem}</strong>!</p>`;
+    title.innerText = `${selectItem}`;
+    // description.innerHTML = `<p>You've landed on <strong>${selectItem}</strong>!</p>`;
 
     canvas.style.display = "block";
     var confettiSettings = { target: "my-canvas" };

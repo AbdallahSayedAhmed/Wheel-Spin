@@ -32,16 +32,16 @@
     rotate: 8deg;
   }
   .container .wheel .num5 + img {
-    top: 125px;
-    left: 42px;
+    top: 143px;
+    left: 52px;
   }
   .container .wheel .jobName img {
     width: 111px;
   }
   .container .wheel .num6 + img {
-    top: 135px;
-    left: 38px;
-    rotate: 44deg;
+    top: 151px;
+    left: 44px;
+    rotate: 24deg;
   }
   .container .wheel .num8 + img {
     top: 63px;

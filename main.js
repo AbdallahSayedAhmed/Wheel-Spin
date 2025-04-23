@@ -8,6 +8,7 @@ const popup = document.querySelector(".popup");
 const title = document.querySelector(".title");
 const button = document.querySelector(".spinBtn");
 const description = document.querySelector(".description");
+const imagePopup = document.querySelector(".popup-icon");
 
 // Improved shuffle function with Fisher-Yates algorithm
 function shuffle(array) {
@@ -101,6 +102,43 @@ function spin() {
     overlay.classList.add("active");
     popup.classList.add("active");
     title.innerText = `${selectItem}`;
+    switch (selectItem) {
+      case "Customer First":
+        description.innerHTML = `<p>We prioritize our customers needs, and satisfaction.</p>`;
+        imagePopup.src = "./img/1-green.png";
+        break;
+      case "Community":
+        description.innerHTML = `<p>Empowering our community and teamwork.</p>`;
+        imagePopup.src = "./img/8.png";
+        break;
+      case "Sustainability":
+        description.innerHTML = `<p>Investing in a sustainable future.</p>`;
+        imagePopup.src = "./img/7-green.png";
+        break;
+      case "Development":
+        description.innerHTML = `<p>We are proud to contribute to the nation's growth and progress.</p>`;
+        imagePopup.src = "./img/6.png";
+        break;
+      case "Service Excellence":
+        description.innerHTML = `<p>Exceptional service, every time.</p>`;
+        imagePopup.src = "./img/5-green.png";
+        break;
+      case "Innovation":
+        description.innerHTML = `<p>Leading change through innovation.</p>`;
+        imagePopup.src = "./img/4.png";
+        break;
+      case "Trust":
+        description.innerHTML = `<p>We build trust through transparency and delivering on our promises.</p>`;
+        imagePopup.src = "./img/3-green.png";
+        break;
+      case "Resilience":
+        description.innerHTML = `<p>We turn challenges into opportunities for growth.</p>`;
+        imagePopup.src = "./img/2.png";
+        break;
+    
+      default:
+        break;
+    }
     // description.innerHTML = `<p>You've landed on <strong>${selectItem}</strong>!</p>`;
 
     canvas.style.display = "block";

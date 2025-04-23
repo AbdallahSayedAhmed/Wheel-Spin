@@ -5,10 +5,17 @@
   justify-content: center;
   left: 50%;
   transform: translateX(-50%);
+  align-items: center;
+  flex-direction: column;
 }
 .logo img {
   width: fit-content;
   height: 44px;
+}
+.logo p {
+  font-size: 14px;
+  left: 1px;
+  top: 7px;
 }
 
 .container {
@@ -52,27 +59,42 @@
 }
 
 .container .wheel .num1 + img {
-  top: 60px;
-  left: 28px;
-  rotate: -78deg;
+  top: 26px;
+  left: 54px;
+  rotate: 47deg;
 }
-.container .wheel .num6 + img {
-  top: 58px;
-  left: 21px;
-  rotate: 43deg;
+.container .wheel .num2 + img {
+  top: 22px;
+  left: 54px;
+  rotate: 47deg;
 }
 .container .wheel .num3 + img {
-  top: 37px;
-  left: 67px;
+  top: 25px;
+  left: 49px;
 }
-.container .wheel .num8 + img {
-  top: 64px;
-  left: 33px;
-  rotate: 150deg;
+.container .wheel .num4 + img {
+  top: 22px;
+  left: 49px;
 }
 .container .wheel .num5 + img {
-  top: 56px;
-  left: 24px;
+  top: 21px;
+  left: 49px;
+  rotate: 56deg;
+}
+.container .wheel .num6 + img {
+  top: 54px;
+  left: 21px;
+  rotate: 26deg;
+}
+.container .wheel .num7 + img {
+  top: 53px;
+  left: 23px;
+  rotate: 50deg;
+}
+.container .wheel .num8 + img {
+  top: 21px;
+  left: 50px;
+  rotate: 46deg;
 }
 .container .wheel .num5{
   top: 10%;

@@ -9,9 +9,16 @@
   -o-transform: translate(-50%, -50%);
 }
 
+
+
+
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
   .logo img {
     height: 56px;
+  }
+  
+  .logo p{
+    left: -26px;
   }
   .container {
     width: 700px;
@@ -22,31 +29,47 @@
   }
 
   .container .wheel .num1 + img {
-    top: 42px;
-    left: 116px;
-    rotate: -55deg;
+    top: 59px;
+    left: 142px;
+    rotate: 48deg;
+  }
+  .container .wheel .num2 + img {
+    top: 51px;
+    left: 138px;
+    rotate: 55deg;
   }
   .container .wheel .num3 + img {
-    top: 71px;
-    left: 154px;
-    rotate: 8deg;
+    top: 70px;
+    left: 146px;
+    rotate: 62deg;
+  }
+  .container .wheel .num4 + img {
+    top: 70px;
+    left: 141px;
+    rotate: 66de
   }
   .container .wheel .num5 + img {
-    top: 143px;
-    left: 52px;
-  }
-  .container .wheel .jobName img {
-    width: 111px;
+    top: 79px;
+    left: 150px;
+    rotate: 58deg;
   }
   .container .wheel .num6 + img {
-    top: 151px;
+    top: 140px;
     left: 44px;
     rotate: 24deg;
   }
+  .container .wheel .num7 + img {
+    top: 137px;
+    left: 62px;
+    rotate: 61deg;
+  }
   .container .wheel .num8 + img {
-    top: 63px;
-    left: 129px;
-    rotate: -194deg;
+    top: 52px;
+    left: 137px;
+    rotate: -313deg;
+  }
+  .container .wheel .jobName img {
+    width: 99px;
   }
   
 }

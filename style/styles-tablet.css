@@ -1,16 +1,22 @@
 .logo {
-  position: none;
   display: flex;
   position: absolute;
   top: 40px;
   left: 50%;
   transform: translateX(-50%);
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .logo img {
   width: fit-content;
   height: 55px;
 }
+.logo p{
+  left: 0px;
+  font-size: 18px;
+}
+
 
 .container {
   width: 330px;
@@ -82,54 +88,140 @@
 }
 
 .container .wheel .jobName img {
-  width: 34px;
+  width: 44px;
 }
 
+
 .container .wheel .num1 + img {
-  top: 81px;
-  left: 42px;
+  top: 68px;
+  left: 116px;
+  rotate: 49deg;
 }
-.container .wheel .num6 + img {
-  top: 86px;
-  left: 38px;
-  rotate: 43deg;
-}
-.container .wheel .num6 {
-  top: 5%;
-  left: 5%;
+.container .wheel .num2 + img {
+  top: 68px;
+  left: 116px;
+  rotate: 49deg;
 }
 .container .wheel .num3 + img {
   top: 59px;
   left: 97px;
 }
-.container .wheel .num8 + img {
-  top: 85px;
-  left: 47px;
-  rotate: 163deg;
+.container .wheel .num4 + img {
+  top: 61px;
+  left: 102px;
 }
 .container .wheel .num5 + img {
-  top: 79px;
-  left: 38px;
+  top: 61px;
+  left: 102px;
+}
+.container .wheel .num6 + img {
+  top: 106px;
+  left: 50px;
+  rotate: 28deg;
+}
+.container .wheel .num7 + img {
+  top: 98px;
+  left: 48px;
+  rotate: 52deg;
+}
+.container .wheel .num8 + img {
+  top: 53px;
+  left: 99px;
+  rotate: 46deg;
+}
+.container .wheel .num6 {
+  top: 5%;
+  left: 5%;
 }
 
+@media screen and (max-width: 459px){
+  .logo p{
+    font-size: 17px;
+  }
 
-@media screen and (min-width: 460px) and (max-width: 569px){
   .container .wheel .num1 + img {
-    top: 94px;
-    left: 39px;
-    rotate: -82deg;
+    top: 42px;
+    left: 78px;
+    rotate: 49deg;
+  }
+  .container .wheel .num2 + img {
+    top: 35px;
+    left: 77px;
+    rotate: 49deg;
+  }
+  .container .wheel .num3 + img {
+    top: 34px;
+    left: 72px;
+  }
+  .container .wheel .num4 + img {
+    top: 33px;
+    left: 70px;
+  }
+  .container .wheel .num5 + img {
+    top: 28px;
+    left: 67px;
   }
   .container .wheel .num6 + img {
-    top: 98px;
+    top: 74px;
+    left: 33px;
+    rotate: 28deg;
+  }
+  .container .wheel .num7 + img {
+    top: 77px;
+    left: 36px;
+    rotate: 54deg;
+  }
+  .container .wheel .num8 + img {
+    top: 38px;
+    left: 73px;
+    rotate: 46deg;
+  }
+  .container .wheel .jobName img {
+    width: 38px;
+  }
+}
+
+@media screen and (min-width: 460px) and (max-width: 569px){
+  .logo p {
+    font-size: 17px;
+  }
+  .container .wheel .num1 + img {
+    top: 46px;
+    left: 91px;
+    rotate: 44deg
+  }
+  .container .wheel .num2 + img {
+    top: 46px;
+    left: 91px;
+    rotate: 48deg;
+  }
+  .container .wheel .num3 + img {
+    top: 46px;
+    left: 85px;
+    rotate: 62deg;
+  }
+  .container .wheel .num4 + img {
+    top: 48px;
+    left: 86px;
+    rotate: 53deg;
+  }
+  .container .wheel .num5 + img {
+    top: 50px;
+    left: 89px;
+  }
+  .container .wheel .num6 + img {
+    top: 94px;
+    left: 44px;
+  }
+  .container .wheel .num7 + img {
+    top: 91px;
     left: 44px;
   }
 
   .container .wheel .num8 + img {
-    top: 99px;
-    rotate: 152deg;
-  }
-  .container .wheel .num5 + img {
-    top: 91px;
+    top: 44px;
+    left: 88px;
+    rotate: 48deg;
   }
   .container .wheel .num5  {
     top: 12%;
@@ -156,11 +248,11 @@
 
 @media (min-width: 695px){
   .container{
-    width: 650px;
-    height: 650px;
+    width: 550px;
+    height: 550px;
   }
   .container .wheel .jobName span {
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 600;
   }
 }
@@ -185,26 +277,42 @@
     width: 78px;
   }
   .container .wheel .num1 + img {
-    top: 75px;
-    left: 148px;
+    top: 59px;
+    left: 121px;
+    rotate: 47deg;
+  }
+  .container .wheel .num2 + img {
+    top: 34px;
+    left: 110px;
+    rotate: 51deg;
   }
   .container .wheel .num3 + img {
-    top: 75px;
-    left: 148px;
+    top: 43px;
+    left: 111px;
+  }
+  .container .wheel .num4 + img {
+    top: 35px;
+    left: 101px;
   }
   .container .wheel .num5 + img {
-    top: 143px;
-    left: 50px;
+    top: 43px;
+    left: 107px;
+    rotate: 59deg;
   }
   .container .wheel .num6 + img {
-    top: 157px;
-    left: 58px;
-    rotate: 25deg;
+    top: 114px;
+    left: 40px;
+    rotate: 23deg;
+  }
+  .container .wheel .num7 + img {
+    top: 123px;
+    left: 56px;
+    rotate: -316deg;
   }
   .container .wheel .num8 + img {
-    top: 75px;
-    left: 148px;
-    rotate: -192deg;
+    top: 50px;
+    left: 112px;
+    rotate: -311deg;
   }
 
   .qrcode {

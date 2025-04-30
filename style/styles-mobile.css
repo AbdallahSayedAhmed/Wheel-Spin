@@ -106,6 +106,77 @@
 }
 
 
+.back_wheel .bulb{
+  width: 5px;
+  height: 5px;
+}
+
+.back_wheel .bulbs_1 {
+  top: calc(50% - 114px);
+  left: calc(50% - 49px);
+}
+.back_wheel .bulbs_2 {
+  top: calc(50% - 123px);
+  left: calc(50% - 6px);
+}
+.back_wheel .bulbs_3 {
+  top: calc(50% - 114px);
+  left: calc(50% - -44px);
+}
+.back_wheel .bulbs_4 {
+  top: calc(50% - 89px);
+  left: calc(50% - -82px);
+}
+.back_wheel .bulbs_5 {
+  top: calc(50% - 50px);
+  left: calc(50% - -109px);
+}
+.back_wheel .bulbs_6 {
+  top: calc(50% - 3px);
+  left: calc(50% - -118px);
+}
+.back_wheel .bulbs_7 {
+  top: calc(50% - -44px);
+  left: calc(50% - -109px);
+}
+.back_wheel .bulbs_8 {
+  top: calc(50% - -82px);
+  left: calc(50% - -83px);
+}
+.back_wheel .bulbs_9 {
+  top: calc(50% - -109px);
+  left: calc(50% - -44px);
+}
+.back_wheel .bulbs_10 {
+  top: calc(50% - -118px);
+  left: calc(50% - 5px);
+}
+.back_wheel .bulbs_11 {
+  top: calc(50% - -109px);
+  left: calc(50% - 50px);
+}
+.back_wheel .bulbs_12 {
+  top: calc(50% - -83px);
+  left: calc(50% - 88px);
+}
+.back_wheel .bulbs_13 {
+  top: calc(50% - -43px);
+  left: calc(50% - 114px);
+}
+.back_wheel .bulbs_14 {
+  left: calc(50% - 123px);
+  top: calc(50% - 4px);
+}
+.back_wheel .bulbs_15 {
+  top: calc(50% - 50px);
+  left: calc(50% - 114px);
+}
+.back_wheel .bulbs_16 {
+  top: calc(50% - 87px);
+  left: calc(50% - 89px);
+}
+
+
 .fullWindow {
   display: none;
 }

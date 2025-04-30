@@ -24,6 +24,7 @@
     width: 700px;
     height: 700px;
   }
+
   .container .wheel .jobName span {
     font-size: 1.5em;
   }
@@ -71,7 +72,70 @@
   .container .wheel .jobName img {
     width: 99px;
   }
-  
+  .back_wheel .bulbs_1 {
+    top: calc(50% - 322px);
+    left: calc(50% - 138px);
+  }
+  .back_wheel .bulbs_2 {
+    top: calc(50% - 347px);
+    left: calc(50% - 17px);
+  }
+  .back_wheel .bulbs_3 {
+    top: calc(50% - 321px);
+    left: calc(50% - -120px);
+  }
+  .back_wheel .bulbs_4 {
+    top: calc(50% - 261px);
+    left: calc(50% - -214px);
+  }
+  .back_wheel .bulbs_5 {
+    top: calc(50% - 140px);
+    left: calc(50% - -301px);
+  }
+  .back_wheel .bulbs_6 {
+    top: calc(50% - 8px);
+    left: calc(50% - -327px);
+  }
+  .back_wheel .bulbs_7 {
+    top: calc(50% - -120px);
+    left: calc(50% - -300px);
+  }
+  .back_wheel .bulbs_8 {
+    top: calc(50% - -230px);
+    left: calc(50% - -225px);
+  }
+  .back_wheel .bulbs_9 {
+    top: calc(50% - -302px);
+    left: calc(50% - -118px);
+  }
+  .back_wheel .bulbs_10 {
+    top: calc(50% - -327px);
+    left: calc(50% - 12px);
+  }
+  .back_wheel .bulbs_11 {
+    top: calc(50% - -301px);
+    left: calc(50% - 140px);
+  }
+  .back_wheel .bulbs_12 {
+    top: calc(50% - -223px);
+    left: calc(50% - 253px);
+  }
+  .back_wheel .bulbs_13 {
+    top: calc(50% - -121px);
+    left: calc(50% - 321px);
+  }
+  .back_wheel .bulbs_14 {
+    left: calc(50% - 347px);
+    top: calc(50% - 13px);
+  }
+  .back_wheel .bulbs_15 {
+    top: calc(50% - 139px);
+    left: calc(50% - 322px);
+  }
+  .back_wheel .bulbs_16 {
+    top: calc(50% - 247px);
+    left: calc(50% - 250px);
+  }
 }
 @media screen and (min-width: 1400px) and (max-width: 1599px) {
   .logo img {

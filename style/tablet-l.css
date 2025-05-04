@@ -10,9 +10,22 @@
   transform: translate(-50%, -50%);
 }
 
+.upper_stand img {
+  top: 94px;
+  left: 51%;
+}
+
+.upper_stand h1{
+  top: 53%;
+  left: 36%;
+}
+
+.down_stand img{
+  left: 60%;
+}
 
 .container .wheel .jobName span {
-  font-size: 1.6em;
+  font-size: 2em;
 }
 .fullWindow {
   display: none;
@@ -27,48 +40,48 @@
 }
 
 .container .wheel .jobName img {
-  width: 88px;
+  width: 80px;
 }
 
 
 .container .wheel .num1 + img {
-  top: 68px;
-  left: 134px;
-  rotate: 47deg;
+  top: 114px;
+  left: 42px;
+  rotate: 26deg;
 }
 .container .wheel .num2 + img {
-  top: 39px;
-  left: 122px;
-  rotate: 52deg;
+  top: 108px;
+  left: 54px;
+  rotate: 28deg;
 }
 .container .wheel .num3 + img {
-  top: 53px;
-  left: 120px;
-  rotate: 60deg;
+  top: 102px;
+  left: 50px;
+  rotate: 44deg;
 }
 .container .wheel .num4 + img {
-  top: 49px;
-  left: 121px;
-  rotate: 64deg;
+  top: 103px;
+  left: 42px;
+  rotate: 49deg;
 }
 
 .container .wheel .num5 + img {
-  top: 49px;
-  left: 121px;
-  rotate: 61deg;
+  top: 119px;
+  left: 49px;
+  rotate: 38deg;
 }
 .container .wheel .num6 + img {
-  top: 119px;
+  top: 116px;
   left: 36px;
 }
 .container .wheel .num7 + img {
   rotate: 54deg;
-  top: 132px;
+  top: 126px;
 }
 .container .wheel .num8 + img {
-  rotate: 44deg;
-  top: 46px;
-  left: 119px;
+  rotate: 26deg;
+  top: 116px;
+  left: 42px;
 }
 
 .container .wheel .num6 {

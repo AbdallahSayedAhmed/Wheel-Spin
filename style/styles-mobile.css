@@ -31,8 +31,35 @@
   -o-transform: translate(-50%, -50%);
 }
 
+.upper_stand {
+  width: 301px;
+  height: 684px;
+}
+
+.upper_stand img {
+  top: 236px;
+  left: 51%;
+}
+.upper_stand h1 {
+  font-size: 1.3em;
+  top: 74%;
+  left: 36%;
+}
+
+
+.down_stand {
+  width: 375px;
+  height: 650px;
+}
+
+.down_stand img {
+  top: 42%;
+  left: 60%;
+}
+
+
 .container .wheel .jobName span {
-  font-size: 0.7em;
+  font-size: 0.9em;
   font-weight: 600;
 }
 .container .spinBtn {
@@ -55,35 +82,35 @@
 }
 
 .container .wheel .jobName img {
-  width: 32px;
+  width: 28px;
 }
 
 .container .wheel .num1 + img {
-  top: 26px;
-  left: 54px;
-  rotate: 47deg;
+  top: 54px;
+  left: 24px;
+  rotate: 27deg;
 }
 .container .wheel .num2 + img {
-  top: 22px;
-  left: 54px;
-  rotate: 47deg;
+  top: 49px;
+  left: 26px;
+  rotate: 33deg;
 }
 .container .wheel .num3 + img {
-  top: 25px;
-  left: 49px;
+  top: 45px;
+  left: 22px;
 }
 .container .wheel .num4 + img {
-  top: 22px;
-  left: 49px;
+  top: 47px;
+  left: 21px;
 }
 .container .wheel .num5 + img {
-  top: 21px;
-  left: 49px;
-  rotate: 56deg;
+  top: 54px;
+  left: 23px;
+  rotate: 47deg;
 }
 .container .wheel .num6 + img {
-  top: 54px;
-  left: 21px;
+  top: 50px;
+  left: 18px;
   rotate: 26deg;
 }
 .container .wheel .num7 + img {
@@ -92,9 +119,9 @@
   rotate: 50deg;
 }
 .container .wheel .num8 + img {
-  top: 21px;
-  left: 50px;
-  rotate: 46deg;
+  top: 53px;
+  left: 19px;
+  rotate: 27deg;
 }
 .container .wheel .num5{
   top: 10%;

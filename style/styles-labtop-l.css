@@ -13,9 +13,7 @@
 
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .logo img {
-    height: 56px;
-  }
+
   
   .logo p{
     left: -26px;
@@ -26,51 +24,55 @@
   }
 
   .container .wheel .jobName span {
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
 
+  .container .wheel .jobName img {
+    width: 85px;
+    position: absolute;
+  }
+  
   .container .wheel .num1 + img {
-    top: 59px;
-    left: 142px;
-    rotate: 48deg;
+    top: 141px;
+    left: 60px;
+    rotate: 23deg;
   }
   .container .wheel .num2 + img {
-    top: 51px;
-    left: 138px;
-    rotate: 55deg;
+    top: 139px;
+    left: 74px;
+    rotate: 28deg;
   }
   .container .wheel .num3 + img {
-    top: 70px;
-    left: 146px;
-    rotate: 62deg;
+    top: 129px;
+    left: 59px;
+    rotate: 34deg;
   }
   .container .wheel .num4 + img {
-    top: 70px;
-    left: 141px;
-    rotate: 66de
+    top: 133px;
+    left: 54px;
+    rotate: 36deg;
   }
   .container .wheel .num5 + img {
-    top: 79px;
-    left: 150px;
-    rotate: 58deg;
+    top: 153px;
+    left: 69px;
+    rotate: 397deg;
   }
   .container .wheel .num6 + img {
-    top: 140px;
-    left: 44px;
-    rotate: 24deg;
+    top: 145px;
+    left: 59px;
+    rotate: 384deg;
+    width: 85px;
   }
   .container .wheel .num7 + img {
-    top: 137px;
-    left: 62px;
-    rotate: 61deg;
+    top: 143px;
+    left: 65px;
+    rotate: 414deg;
   }
   .container .wheel .num8 + img {
-    top: 52px;
-    left: 137px;
-    rotate: -313deg;
-  }
-  .container .wheel .jobName img {
-    width: 99px;
+    top: 141px;
+    left: 56px;
+    rotate: 26deg;
+    width: 85px;
   }
   .back_wheel .bulbs_1 {
     top: calc(50% - 322px);

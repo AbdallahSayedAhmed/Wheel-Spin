@@ -45,66 +45,79 @@
 
     <div class="logo">
       <img src="./img/logo .png" alt="logo image" />
-      <p>Guess the value of the day</p>
+      <!-- <p>Guess the value of the day</p> -->
     </div>
 
-    <div class="container">
-      <div class="wheel " onclick="spin()">
-        <div class="jobName" style="--i: 1; --clr: #61a534 ">
-          <span class="num1">Customer First</span>
-          <img src="./img/1.png" alt="" />
-        </div>
-        <div class="jobName" style="--i: 2; --clr: #ffffff ">
-          <span class="num2">Resilience</span>
-          <img src="./img/2.png" alt="">
-        </div>
-        <div class="jobName" style="--i: 3; --clr: #61a534 ">
-          <span class="num3">Trust</span>
-          <img src="./img/3.png" alt="" />
-        </div>
-        <div class="jobName" style="--i: 4; --clr: #ffffff ">
-          <span class="num4">Innovation</span>
-          <img src="./img/4.png" alt="" />
-        </div>
-        <div class="jobName" style="--i: 5; --clr: #61a534 ">
-          <span class="num5">Service Excellence</span>
-          <img src="./img/5.png" alt="" />
-        </div>
-        <div class="jobName" style="--i: 6; --clr: #ffffff ">
-          <span class="num6">Development</span>
-          <img src="./img/6.png" alt="" />
-        </div>
-        <div class="jobName" style="--i: 7; --clr: #61a534 ">
-          <span class="num7">Sustainability</span>
-          <img src="./img/7.png" alt="">
-        </div>
-        <div class="jobName" style="--i: 8; --clr: #ffffff   ">
-          <span class="num8">Community</span>
-          <img src="./img/8.png" alt="">
-        </div>
+    <div class="container_with_stand">
+      <div class="upper_stand">
+        <img src="./img/upper_stand .png" alt="">
+        <h1>Today's Value</h1>
       </div>
-      <div class="back_wheel">
-        <div class="bulb bulbs_1"></div>
-        <div class="bulb bulbs_2"></div>
-        <div class="bulb bulbs_3"></div>
-        <div class="bulb bulbs_4"></div>
-        <div class="bulb bulbs_5"></div>
-        <div class="bulb bulbs_6"></div>
-        <div class="bulb bulbs_7"></div>
-        <div class="bulb bulbs_8"></div>
-        <div class="bulb bulbs_9"></div>
-        <div class="bulb bulbs_10"></div>
-        <div class="bulb bulbs_11"></div>
-        <div class="bulb bulbs_12"></div>
-        <div class="bulb bulbs_13"></div>
-        <div class="bulb bulbs_14"></div>
-        <div class="bulb bulbs_15"></div>
-        <div class="bulb bulbs_16"></div>
+
+      <div class="container">
+        <div class="wheel " onclick="spin()">
+          <div class="jobName" style="--i: 1; --clr: #61a534 ">
+            <span class="num1">Customer First</span>
+            <img src="./img/1.png" alt="" />
+          </div>
+          <div class="jobName" style="--i: 2; --clr: #ffffff ">
+            <span class="num2">Resilience</span>
+            <img src="./img/2.png" alt="">
+          </div>
+          <div class="jobName" style="--i: 3; --clr: #61a534 ">
+            <span class="num3">Trust</span>
+            <img src="./img/3.png" alt="" />
+          </div>
+          <div class="jobName" style="--i: 4; --clr: #ffffff ">
+            <span class="num4">Innovation</span>
+            <img src="./img/4.png" alt="" />
+          </div>
+          <div class="jobName" style="--i: 5; --clr: #61a534 ">
+            <span class="num5">Service Excellence</span>
+            <img src="./img/5.png" alt="" />
+          </div>
+          <div class="jobName" style="--i: 6; --clr: #ffffff ">
+            <span class="num6">Development</span>
+            <img src="./img/6.png" alt="" />
+          </div>
+          <div class="jobName" style="--i: 7; --clr: #61a534 ">
+            <span class="num7">Sustainability</span>
+            <img src="./img/7.png" alt="">
+          </div>
+          <div class="jobName" style="--i: 8; --clr: #ffffff   ">
+            <span class="num8">Community</span>
+            <img src="./img/8.png" alt="">
+          </div>
+        </div>
+        <div class="back_wheel">
+          <div class="bulb bulbs_1"></div>
+          <div class="bulb bulbs_2"></div>
+          <div class="bulb bulbs_3"></div>
+          <div class="bulb bulbs_4"></div>
+          <div class="bulb bulbs_5"></div>
+          <div class="bulb bulbs_6"></div>
+          <div class="bulb bulbs_7"></div>
+          <div class="bulb bulbs_8"></div>
+          <div class="bulb bulbs_9"></div>
+          <div class="bulb bulbs_10"></div>
+          <div class="bulb bulbs_11"></div>
+          <div class="bulb bulbs_12"></div>
+          <div class="bulb bulbs_13"></div>
+          <div class="bulb bulbs_14"></div>
+          <div class="bulb bulbs_15"></div>
+          <div class="bulb bulbs_16"></div>
+        </div>
+        <button class="spinBtn" onclick="spin()">
+          <img src="./img/logo_spin .png" alt="spin logo" />
+        </button>
       </div>
-      <button class="spinBtn" onclick="spin()">
-        <img src="./img/logo_spin .png" alt="spin logo" />
-      </button>
+
+      <div class="down_stand">
+        <img src="./img/down_stand.png" alt="">
+      </div>
+
     </div>
+
 
     <!-- ########################## -->
 
@@ -116,9 +129,9 @@
     <!-- ################################# -->
     <canvas id="my-canvas"  onclick="removeOverlay()"></canvas>
     <!-- ################################# -->
-    <button class="fullWindow" onclick="fullWindowMood()">
+    <!-- <button class="fullWindow" onclick="fullWindowMood()">
       Full Screen Mode
-    </button>
+    </button> -->
     <!-- ################################# -->
     <audio
       src="assets/applause.mp3"

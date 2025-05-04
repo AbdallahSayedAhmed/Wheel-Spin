@@ -1,10 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"); */
+
+
+@font-face {
+  font-family: "DK Uncle Edward";
+  src: url("../fonts/DK Uncle Edward.otf");
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "DK Uncle Edward";
   outline: none;
 }
 
@@ -108,86 +115,71 @@ body {
 
 @media screen and (min-width: 1023px) and (max-width: 1199px) {
   .logo img {
-    height: 55px;
+    height: 77px;
   }
   .logo p{
     font-size: 14px;
   }
+}
 
+.container_with_stand{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  .back_wheel .bulbs_1 {
-    top: calc(50% - 321px);
-    left: calc(50% - 139px);
-  }
-  .back_wheel .bulbs_2 {
-    top: calc(50% - 347px);
-    left: calc(50% - 17px);
-  }
-  .back_wheel .bulbs_3 {
-    top: calc(50% - 321px);
-    left: calc(50% - -120px);
-  }
-  .back_wheel .bulbs_4 {
-    top: calc(50% - 261px);
-    left: calc(50% - -214px);
-  }
-  .back_wheel .bulbs_5 {
-    top: calc(50% - 140px);
-    left: calc(50% - -301px);
-  }
-  .back_wheel .bulbs_6 {
-    top: calc(50% - 8px);
-    left: calc(50% - -327px);
-  }
-  .back_wheel .bulbs_7 {
-    top: calc(50% - -120px);
-    left: calc(50% - -300px);
-  }
-  .back_wheel .bulbs_8 {
-    top: calc(50% - -230px);
-    left: calc(50% - -225px);
-  }
-  .back_wheel .bulbs_9 {
-    top: calc(50% - -302px);
-    left: calc(50% - -118px);
-  }
-  .back_wheel .bulbs_10 {
-    top: calc(50% - -327px);
-    left: calc(50% - 12px);
-  }
-  .back_wheel .bulbs_11 {
-    top: calc(50% - -301px);
-    left: calc(50% - 140px);
-  }
-  .back_wheel .bulbs_12 {
-    top: calc(50% - -223px);
-    left: calc(50% - 253px);
-  }
-  .back_wheel .bulbs_13 {
-    top: calc(50% - -121px);
-    left: calc(50% - 321px);
-  }
-  .back_wheel .bulbs_14 {
-    top: calc(50% - 13px);
-    left: calc(50% - 347px);
-  }
-  .back_wheel .bulbs_15 {
-    top: calc(50% - 139px);
-    left: calc(50% - 322px);
-  }
-  .back_wheel .bulbs_16 {
-    top: calc(50% - 247px);
-    left: calc(50% - 250px);
-  }
+.upper_stand{
+  position: absolute;
+  width: 507px;
+  height: 684px;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+.upper_stand img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  z-index: 4;
+}
+
+.upper_stand h1{
+  font-size: 2.3em;
+  position: relative;
+  top: 38%;
+  left: 35%;
+  transform: translate(50%, 50%);
+  z-index: 5;
+}
+
+.down_stand{
+  position: absolute;
+  width: 700px;
+  height: 650px;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+.down_stand img{
+  width: 109%;
+  height: 100%;
+  position: absolute;
+  top: 74%;
+  left: 59%;
+  z-index: 4;
 }
 
 .container {
   position: relative;
-  width: 800px;
-  height: 800px;
+  width: 700px;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 
 .container:fullscreen {
@@ -274,15 +266,16 @@ body {
 .back_wheel {
   width: 100%;
   height: 100%;
-  background-color: #0f2b46;
   transform: translate(-50%,-50%);
+  background-color: #0f2b46;
   top:50%;
   left:50%;
   z-index:-1;
-  box-shadow: 0px 0px 14px 3px #333;
+  /* box-shadow: 0px 0px 14px 3px #333; */
   pointer: none;
 }
 
+/*#0f2b46  */
 
 .back_wheel .bulb{
   position: absolute;
@@ -290,82 +283,81 @@ body {
   height: 20px;
   border-radius: 50%;
   box-shadow:
-  inset 0 0 8px #fff,  /* Inner white highlight */
-  inset 8px 0 30px #ff8c00, /* Dark Orange inset */
-  inset -8px 0 30px #ffd700, /* Gold/Yellow inset */
-  inset 8px 0 100px #ff8c00, /* Wider Dark Orange inset */
-  inset -8px 0 100px #ffd700, /* Wider Gold/Yellow inset */
-  0 0 15px #fff,  /* Outer white glow */
-  -5px 0 35px #ff8c00, /* Outer Dark Orange glow */
-  5px 0 35px #ffd700;  /* Outer Gold/Yellow glow */
+  inset 0 0 8px #fff,
+  inset 8px 0 30px #ff8c00,
+  inset -8px 0 30px #ffd700, 
+  inset 8px 0 100px #ff8c00, 
+  inset -8px 0 100px #ffd700, 
+  0 0 15px #fff, 
+  -7px 0px 35px 10px #ff8c00,
+  5px 0 35px 10px #ffd700;
   animation: blink 1.5s infinite alternate;
 
 }
-@media screen and (min-width: 1400px){
+
 .back_wheel .bulbs_1 {
-  top: calc(50% - 366px);
-  left: calc(50% - 160px);
+  top: calc(50% - 321px);
+  left: calc(50% - 139px);
 }
 .back_wheel .bulbs_2 {
-  top: calc(50% - 395px);
-  left: calc(50% - 16px);
+  top: calc(50% - 347px);
+  left: calc(50% - 17px);
 }
 .back_wheel .bulbs_3 {
-  top: calc(50% - 366px);
-  left: calc(50% - -138px);
+  top: calc(50% - 321px);
+  left: calc(50% - -120px);
 }
 .back_wheel .bulbs_4 {
-  top: calc(50% - 288px);
-  left: calc(50% - -257px);
+  top: calc(50% - 261px);
+  left: calc(50% - -214px);
 }
 .back_wheel .bulbs_5 {
-  top: calc(50% - 158px);
-  left: calc(50% - -346px);
+  top: calc(50% - 140px);
+  left: calc(50% - -301px);
 }
 .back_wheel .bulbs_6 {
   top: calc(50% - 8px);
-  left: calc(50% - -374px);
+  left: calc(50% - -327px);
 }
 .back_wheel .bulbs_7 {
-  top: calc(50% - -139px);
-  left: calc(50% - -346px);
+  top: calc(50% - -120px);
+  left: calc(50% - -300px);
 }
 .back_wheel .bulbs_8 {
-  top: calc(50% - -263px);
-  left: calc(50% - -261px);
+  top: calc(50% - -230px);
+  left: calc(50% - -225px);
 }
 .back_wheel .bulbs_9 {
-  top: calc(50% - -345px);
-  left: calc(50% - -139px);
+  top: calc(50% - -302px);
+  left: calc(50% - -118px);
 }
 .back_wheel .bulbs_10 {
-  top: calc(50% - -375px);
+  top: calc(50% - -327px);
   left: calc(50% - 12px);
 }
 .back_wheel .bulbs_11 {
-  top: calc(50% - -346px);
-  left: calc(50% - 158px);
+  top: calc(50% - -301px);
+  left: calc(50% - 140px);
 }
 .back_wheel .bulbs_12 {
-  top: calc(50% - -257px);
-  left: calc(50% - 288px);
+  top: calc(50% - -223px);
+  left: calc(50% - 253px);
 }
 .back_wheel .bulbs_13 {
-  top: calc(50% - -140px);
-  left: calc(50% - 366px);
+  top: calc(50% - -121px);
+  left: calc(50% - 321px);
 }
 .back_wheel .bulbs_14 {
   top: calc(50% - 13px);
-  left: calc(50% - 396px);
+  left: calc(50% - 347px);
 }
 .back_wheel .bulbs_15 {
-  top: calc(50% - 160px);
-  left: calc(50% - 367px);
+  top: calc(50% - 139px);
+  left: calc(50% - 322px);
 }
 .back_wheel .bulbs_16 {
-  top: calc(50% - 282px);
-  left: calc(50% - 283px);
-}
+  top: calc(50% - 247px);
+  left: calc(50% - 250px);
 }
 
 @keyframes blink {
@@ -420,115 +412,60 @@ body {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 500;
   text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.15);
 }
 
 
 .container .wheel .jobName img {
-  width: 115px;
+  width: 85px;
   position: absolute;
 }
 
 .container .wheel .num1 + img {
-  top: 61px;
-  left: 160px;
-  rotate: 42deg;
+  top: 141px;
+  left: 60px;
+  rotate: 23deg;
 }
 .container .wheel .num2 + img {
-  top: 61px;
-  left: 160px;
-  rotate: 42deg;
+  top: 139px;
+  left: 74px;
+  rotate: 28deg;
 }
 .container .wheel .num3 + img {
-  top: 73px;
-  left: 158px;
-  rotate: 59deg;
+  top: 129px;
+  left: 59px;
+  rotate: 34deg;
 }
 .container .wheel .num4 + img {
-  top: 69px;
-  left: 152px;
-  rotate: 60deg
+  top: 133px;
+  left: 54px;
+  rotate: 36deg;
 }
 .container .wheel .num5 + img {
-  top: 77px;
-  left: 168px;
-  rotate: 415deg;
+  top: 153px;
+  left: 69px;
+  rotate: 397deg;
 }
 .container .wheel .num6 + img {
-  top: 167px;
+  top: 145px;
   left: 59px;
   rotate: 384deg;
-  width: 96px;
+  width: 85px;
 }
 .container .wheel .num7 + img {
-  top: 163px;
+  top: 143px;
   left: 65px;
   rotate: 414deg;
 }
 .container .wheel .num8 + img {
-  top: 80px;
-  left: 164px;
-  rotate: 48deg;
-  width: 91px;
+  top: 141px;
+  left: 56px;
+  rotate: 26deg;
+  width: 85px;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1199px){
-  .container {
-    width: 700px;
-    height: 700px;
-  }
-
-.container .wheel .num1 + img {
-  top: 74px;
-  left: 156px;
-  rotate: 46deg;
-}
-.container .wheel .num2 + img {
-  top: 58px;
-  left: 148px;
-  rotate: 46deg;
-}
-.container .wheel .num3 + img {
-  top: 61px;
-  left: 134px;
-  rotate: 59deg;
-}
-.container .wheel .num4 + img {
-  top: 55px;
-  left: 141px;
-  rotate: 60deg
-}
-.container .wheel .num5 + img {
-  top: 59px;
-  left: 131px;
-  rotate: 421deg;
-}
-.container .wheel .num6 + img {
-  top: 145px;
-  left: 48px;
-  rotate: 384deg;
-  width: 96px;
-}
-.container .wheel .num7 + img {
-  top: 145px;
-  left: 62px;
-  rotate: 411deg;
-}
-.container .wheel .num8 + img {
-  top: 54px;
-  left: 139px;
-  rotate: 48deg;
-}
-.container .wheel .jobName img {
-  width: 100px;
-}
-.container .wheel .num6{
-  top: 5%;
-  left: 5%; 
-}
-}
 
 .container .wheel .num1 {
   top: 8%;

@@ -122,8 +122,8 @@ body {
 .ground{
   display: flex;
   position: absolute;
-  width: 100%;
-  bottom: 0;
+  width: 126%;
+  bottom: 1px;
 }
 
 .ground img{

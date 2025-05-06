@@ -175,6 +175,23 @@ body {
   z-index: 4;
 }
 
+@media screen and (min-width: 375px) and (max-width: 424px){
+  .stand img {
+    top: 582px;
+    left: 47%;
+    height: 65%;
+  }
+  
+}
+@media screen and (min-width: 425px) and (max-width: 767px){
+  .stand img {
+    top: 582px;
+    left: 47%;
+    height: 65%;
+  }
+  
+}
+
 .ground img {
   width: 148%;
   height: 100%;

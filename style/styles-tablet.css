@@ -22,7 +22,7 @@
   width: 330px;
   height: 330px;
   position: absolute;
-  top: 59%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -165,16 +165,16 @@
   .container{
     width:400px;
     height:400px;
-    top: 52%;
+    top: 44%;
   }
   .ground img {
     width: 325%;
 }
 
 .stand img {
-  top: 514px;
+  top: 561px;
   left: 47%;
-  height: 85%;
+  height: 80%;
 }
   .container .wheel .jobName span {
     font-size: 1.4em;
@@ -289,9 +289,9 @@
 }
 
 .stand img {
-  top: 523px;
+  top: 606px;
   left: 48%;
-  height: 83%;
+  height: 71%;
 }
 
   .upper_stand img {
@@ -589,9 +589,9 @@
 
 
   .stand img {
-    top: 511px;
+    top: 608px;
     left: 48%;
-    height: 88%;
+    height: 71%;
 }
 .ground img {
   width: 225%;

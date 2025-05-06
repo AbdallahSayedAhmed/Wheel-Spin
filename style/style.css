@@ -165,13 +165,17 @@ body {
 
 .stand img{
   position: absolute;
-  top: 486px;
+  top: 573px;
   left: 49%;
   transform: translate(-50%, -50%);
-  height: 106%;
+  height: 84%;
   z-index: 4;
 }
 
+.ground img {
+  width: 148%;
+  height: 100%;
+}
 /* .upper_stand{
   position: absolute;
   width: 507px;

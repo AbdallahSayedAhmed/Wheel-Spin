@@ -118,6 +118,13 @@ body {
   font-weight: 600;
   text-shadow:3px 5px 2px rgba(0, 0, 0, 0.15)
 }
+.ground_2{
+  display: flex;
+  position: absolute;
+  width:100%;
+  bottom:0;
+  background: #a89b95;
+}
 
 .ground{
   display: flex;
@@ -174,7 +181,6 @@ body {
   height: 84%;
   z-index: 4;
 }
-
 
 @media screen and (min-width: 375px) and (max-width: 389px){
   .stand img {

@@ -22,7 +22,7 @@
   width: 330px;
   height: 330px;
   position: absolute;
-  top: 50%;
+  top: 59%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -31,6 +31,16 @@
   -o-transform: translate(-50%, -50%);
 }
 
+
+.ground img {
+  width: 410%;
+}
+
+.stand img {
+  top: 610px;
+  left: 47%;
+  height: 70%;
+}
 
 .upper_stand img {
   top: 157px;
@@ -74,7 +84,7 @@
 }
 .back_wheel .bulbs_2 {
   top: calc(50% - 163px);
-  left: calc(50% - 7px);
+  left: calc(50% - 3px);
 }
 .back_wheel .bulbs_3 {
   top: calc(50% - 152px);
@@ -155,8 +165,17 @@
   .container{
     width:400px;
     height:400px;
+    top: 52%;
   }
+  .ground img {
+    width: 325%;
+}
 
+.stand img {
+  top: 556px;
+  left: 47%;
+  height: 85%;
+}
   .container .wheel .jobName span {
     font-size: 1.4em;
     font-weight: 600;
@@ -197,7 +216,7 @@
   }
   .back_wheel .bulbs_2 {
     top: calc(50% - 199px);
-    left: calc(50% - 12px);
+    left: calc(50% - 5px);
   }
   .back_wheel .bulbs_3 {
     top: calc(50% - 185px);
@@ -261,8 +280,19 @@
   .container{
     width:450px;
     height:450px;
+    top: 54%;
   }
   
+
+  .ground img {
+    width: 270%;
+}
+
+.stand img {
+  top: 566px;
+  left: 48%;
+  height: 83%;
+}
 
   .upper_stand img {
     top: 91px;
@@ -297,7 +327,7 @@
   }
   .back_wheel .bulbs_2 {
     top: calc(50% - 223px);
-    left: calc(50% - 8px);
+    left: calc(50% - 3px);
   }
   .back_wheel .bulbs_3 {
     top: calc(50% - 207px);
@@ -554,7 +584,19 @@
   .container{
     width: 550px;
     height: 550px;
+    top: 54%;
   }
+
+
+  .stand img {
+    top: 548px;
+    left: 48%;
+    height: 88%;
+}
+.ground img {
+  width: 225%;
+  height: 100%;
+}
   .container .wheel .jobName span {
     font-size: 1.8em;
     font-weight: 600;
@@ -636,7 +678,7 @@
   }
   .back_wheel .bulbs_2 {
     top: calc(50% - 273px);
-    left: calc(50% - 14px);
+    left: calc(50% - 5px);
   }
   .back_wheel .bulbs_3 {
     top: calc(50% - 254px);

@@ -5,12 +5,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 58%;
-  left: 50%;
+  top: 53%;
+  left: 51%;
   transform: translate(-50%, -50%);
 }
 
-.upper_stand img {
+/* .upper_stand img {
   top: 94px;
   left: 51%;
 }
@@ -22,6 +22,19 @@
 
 .down_stand img{
   left: 60%;
+} */
+
+.ground img {
+  width: 158%;
+  height: 103%;
+}
+
+.stand img {
+  top: 546px;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  height: 91%;
+  z-index: 4;
 }
 
 .container .wheel .jobName span {
@@ -104,7 +117,7 @@
 }
 .back_wheel .bulbs_2 {
   top: calc(50% - 296px);
-  left: calc(50% - 14px);
+  left: calc(50% - 4px);
 }
 .back_wheel .bulbs_3 {
   top: calc(50% - 274px);

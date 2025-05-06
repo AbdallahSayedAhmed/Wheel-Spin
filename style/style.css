@@ -15,6 +15,8 @@
   outline: none;
 }
 
+body, html { overflow-x:hidden; }
+
 body {
   display: flex;
   position: relative;

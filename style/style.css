@@ -178,7 +178,7 @@ body {
 
 @media screen and (min-width: 375px) and (max-width: 389px){
   .stand img {
-    top: 432px;
+    top: 412px;
     left: 47%;
     height: 65%;
   }
@@ -210,7 +210,7 @@ body {
 }
 @media screen and (min-width: 425px) and (max-width: 430px){
   .stand img {
-    top: 622px;
+    top: 614px;
     left: 47%;
     height: 65%;
   }

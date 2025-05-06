@@ -22,7 +22,7 @@
   width: 250px;
   height: 250px;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -36,8 +36,8 @@
 }
 
 .stand img {
-  top: 611px;
-  left: 48%;
+  top: 664px;
+  left: 46%;
   height: 60%;
 }
 

@@ -15,7 +15,10 @@
   outline: none;
 }
 
-body, html { overflow-x:hidden; }
+body, html {
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
 
 body {
   display: flex;

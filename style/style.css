@@ -15,7 +15,7 @@
   outline: none;
 }
 
-body, html {
+html {
   overflow-x:hidden;
   overflow-y:hidden;
 }

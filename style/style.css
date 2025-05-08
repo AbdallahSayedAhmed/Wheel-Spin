@@ -15,10 +15,10 @@
   outline: none;
 }
 
-html {
+/* html {
   overflow-x:hidden;
   overflow-y:hidden;
-}
+} */
 
 body {
   display: flex;
@@ -31,7 +31,7 @@ body {
   align-items: center;
   background: #ffffff;
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 
 }
 

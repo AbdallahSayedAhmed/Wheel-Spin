@@ -150,8 +150,13 @@ h1{
   bottom: 34px;
   right: 173px;
   transform: scale(1.5) skew(26deg, 359deg);
+  font-weight: 100;
+  user-select: none;
   z-index: 5;
 
+  
+
+  
   text-shadow:   
   -1px  1px 1px rgb(44, 44, 44),
   -2px  2px 1px rgb(44, 44, 44),

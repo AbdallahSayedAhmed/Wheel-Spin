@@ -246,15 +246,15 @@ h1{
 }
 @media screen and (min-width: 425px) and (max-width: 430px){
   .stand img {
-    top: 593px;
+    top: 583px;
     left: 47%;
     height: 55%;
   }
   h1{
     font-size: 1.3em;
     position: absolute;
-    bottom: 116px;
-    right: 28px;
+    bottom: 84px;
+    right: 44px;
     transform: scale(1.5);
   }
 }

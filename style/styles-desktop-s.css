@@ -1,0 +1,14 @@
+.logo img {
+  height: 59px;
+}
+.logo p{
+  font-size: 14px;
+}
+
+h1{
+  font-size: 3.5em;
+  position: absolute;
+  bottom: 34px;
+  right: 103px;
+  transform: scale(1.5);
+}

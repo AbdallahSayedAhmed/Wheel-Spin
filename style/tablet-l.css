@@ -24,6 +24,13 @@
   left: 60%;
 } */
 
+h1{
+  font-size: 2.5em;
+  bottom: 33px;
+  right: 71px;
+  transform: scaleX(1.5);
+}
+
 .ground img {
   width: 479%;
 }

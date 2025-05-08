@@ -43,7 +43,13 @@
   height: 51%;
 }
 
-
+h1{
+  font-size: 1.6em;
+  position: absolute;
+  bottom: 91px;
+  right: 20px;
+  transform: scaleX(1.2);
+}
 
 .upper_stand {
   width: 301px;

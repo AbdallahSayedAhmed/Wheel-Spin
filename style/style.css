@@ -152,12 +152,16 @@ h1{
   transform: scale(1.5) skew(26deg, 359deg);
   z-index: 5;
 
-  text-shadow:   -1px  1px 1px rgb(44, 44, 44),
+  text-shadow:   
+  -1px  1px 1px rgb(44, 44, 44),
   -2px  2px 1px rgb(44, 44, 44),
   -3px  3px 1px rgb(44, 44, 44),
-  -4px  4px 1px rgb(44, 44, 44);
-  
+  -4px  4px 1px rgb(44, 44, 44),
+  -5px  5px 1px rgb(44, 44, 44),
+  -6px  6px 1px rgb(44, 44, 44),
+  -7px  7px 1px rgb(44, 44, 44);
 }
+
 
 
 .stand{

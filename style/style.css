@@ -149,24 +149,14 @@ h1{
   position: absolute;
   bottom: 34px;
   right: 173px;
-  transform: scale(1.5);
+  transform: scale(1.5) skew(26deg, 359deg);
   z-index: 5;
 
-  text-shadow:     0 1px 0 hsl(174,5%,40%),
-  0 2px 0 hsl(174,5%,35%),
-  0 3px 0 hsl(174,5%,30%),
-  0 4px 0 hsl(174,5%,16%),
-  0 5px 0 hsl(174,5%,15%),
-  0 6px 0 hsl(174,5%,14%),
-  0 7px 0 hsl(174,5%,13%),
-  0 8px 0 hsl(174,5%,12%),
-
-  0 0 5px rgba(0,0,0,.05),
-  0 1px 3px rgba(0,0,0,.2),
-  0 3px 5px rgba(0,0,0,.2),
-  0 5px 10px rgba(0,0,0,.2),
-  0 10px 10px rgba(0,0,0,.2),
-  0 20px 20px rgba(0,0,0,.3);
+  text-shadow:   -1px  1px 1px rgb(44, 44, 44),
+  -2px  2px 1px rgb(44, 44, 44),
+  -3px  3px 1px rgb(44, 44, 44),
+  -4px  4px 1px rgb(44, 44, 44);
+  
 }
 
 
@@ -197,9 +187,9 @@ h1{
   h1{
     font-size: 1.3em;
     position: absolute;
-    bottom: 84px;
+    bottom: 64px;
     right: 28px;
-    transform: scale(1.5);
+    transform: scale(1.5) skew(26deg, 359deg);
   }
 }
 @media screen and (min-width: 390px) and (max-width: 399px){
@@ -211,9 +201,9 @@ h1{
   h1{
     font-size: 1.3em;
     position: absolute;
-    bottom: 106px;
+    bottom: 89px;
     right: 28px;
-    transform: scale(1.5);
+    transform: scale(1.5) skew(26deg, 359deg);
   }
 }
 @media screen and (min-width: 400px) and (max-width: 413px){
@@ -225,9 +215,9 @@ h1{
   h1{
     font-size: 1.3em;
     position: absolute;
-    bottom: 119px;
-    right: 28px;
-    transform: scale(1.5);
+    bottom: 99px;
+    right: 39px;
+    transform: scale(1.5) skew(26deg, 359deg);
   }
 }
 @media screen and (min-width: 414px) and (max-width: 424px){
@@ -239,9 +229,9 @@ h1{
   h1{
     font-size: 1.3em;
     position: absolute;
-    bottom: 101px;
+    bottom: 88px;
     right: 28px;
-    transform: scale(1.5);
+    transform: scale(1.5) skew(26deg, 359deg);
   }
 }
 @media screen and (min-width: 425px) and (max-width: 430px){
@@ -255,7 +245,7 @@ h1{
     position: absolute;
     bottom: 84px;
     right: 44px;
-    transform: scale(1.5);
+    transform: scale(1.5) skew(26deg, 359deg);
   }
 }
 @media screen and (min-width: 431px) and (max-width: 767px){
@@ -269,7 +259,7 @@ h1{
     position: absolute;
     bottom: 84px;
     right: 28px;
-    transform: scale(1.5);
+    transform: scale(1.5) skew(26deg, 359deg);
   }
 }
 

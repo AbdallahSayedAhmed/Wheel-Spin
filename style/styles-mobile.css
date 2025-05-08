@@ -46,9 +46,9 @@
 h1{
   font-size: 1.6em;
   position: absolute;
-  bottom: 91px;
+  bottom: 74px;
   right: 20px;
-  transform: scaleX(1.2);
+  transform: scaleX(1.2) skew(26deg, 359deg);
 }
 
 .upper_stand {

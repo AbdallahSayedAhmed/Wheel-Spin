@@ -28,7 +28,7 @@ h1{
   font-size: 2.5em;
   bottom: 33px;
   right: 71px;
-  transform: scaleX(1.5);
+  transform: scaleX(1.5)  skew(26deg, 359deg);
 }
 
 .ground img {

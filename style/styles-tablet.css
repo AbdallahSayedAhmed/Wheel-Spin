@@ -69,9 +69,9 @@
   left: 60%;
 }
 .container .wheel .jobName span {
-  font-size: 1.2em;
-  font-weight: 600;
+  font-size: .8em;
 }
+
 
 .back_wheel .bulb{
   width: 8px;
@@ -185,8 +185,7 @@
   height: 74%;
 }
   .container .wheel .jobName span {
-    font-size: 1.4em;
-    font-weight: 600;
+    font-size: 1em;
   }
 
   .upper_stand {
@@ -619,8 +618,7 @@
   height: 100%;
 }
   .container .wheel .jobName span {
-    font-size: 1.8em;
-    font-weight: 600;
+    font-size: 1.5em;
   }
 }
 

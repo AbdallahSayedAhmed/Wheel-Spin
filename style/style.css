@@ -175,7 +175,7 @@ body {
   z-index: 4;
 }
 
-/* @media screen and (min-width: 375px) and (max-width: 389px){
+@media screen and (min-width: 375px) and (max-width: 389px){
   .stand img {
     top: 412px;
     left: 47%;
@@ -222,7 +222,7 @@ body {
     height: 65%;
   }
   
-} */
+}
 
 .ground img {
   width: 148%;

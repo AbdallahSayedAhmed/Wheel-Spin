@@ -177,7 +177,7 @@ body {
 
 @media screen and (min-width: 375px) and (max-width: 389px){
   .stand img {
-    top: 412px;
+    top: 400px;
     left: 47%;
     height: 65%;
   }
@@ -185,7 +185,7 @@ body {
 }
 @media screen and (min-width: 390px) and (max-width: 399px){
   .stand img {
-    top: 560px;
+    top: 511px;
     left: 47%;
     height: 65%;
   }
@@ -193,15 +193,15 @@ body {
 }
 @media screen and (min-width: 400px) and (max-width: 413px){
   .stand img {
-    top: 597px;
+    top: 573px;
     left: 47%;
-    height: 65%;
+    height: 58%;
   }
   
 }
 @media screen and (min-width: 414px) and (max-width: 424px){
   .stand img {
-    top: 590px;
+    top: 545px;
     left: 47%;
     height: 65%;
   }
@@ -209,9 +209,9 @@ body {
 }
 @media screen and (min-width: 425px) and (max-width: 430px){
   .stand img {
-    top: 534px;
+    top: 593px;
     left: 47%;
-    height: 65%;
+    height: 55%;
   }
   
 }

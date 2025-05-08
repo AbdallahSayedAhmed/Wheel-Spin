@@ -118,19 +118,13 @@ body {
   font-weight: 600;
   text-shadow:3px 5px 2px rgba(0, 0, 0, 0.15)
 }
-.ground_2{
-  display: flex;
-  position: absolute;
-  width:100%;
-  bottom:0;
-  background: #a89b95;
-}
 
 .ground{
   display: flex;
   position: absolute;
   width: 126%;
-  bottom: 1px;
+  height: 30%;
+  bottom: 0px;
 }
 
 .ground img{
@@ -175,7 +169,7 @@ body {
 
 .stand img{
   position: absolute;
-  top: 573px;
+  top: 544px;
   left: 49%;
   transform: translate(-50%, -50%);
   height: 84%;
@@ -277,7 +271,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: -43px;
+  top: -89px;
   z-index: 5;
 }
 

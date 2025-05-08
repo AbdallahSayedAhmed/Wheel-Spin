@@ -31,16 +31,14 @@
   -o-transform: translate(-50%, -50%);
 }
 
-.ground{
-  bottom: 42px;
-}
+
 
 .ground img {
   width: 382%;
 }
 
 .stand img {
-  top: 502px;
+  top: 455px;
   left: 46%;
   height: 60%;
 }

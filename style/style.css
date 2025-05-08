@@ -15,10 +15,10 @@
   outline: none;
 }
 
-/* html {
+html {
   overflow-x:hidden;
   overflow-y:hidden;
-} */
+}
 
 body {
   display: flex;
@@ -31,8 +31,7 @@ body {
   align-items: center;
   background: #ffffff;
   min-height: 100vh;
-  /* overflow: hidden; */
-
+  overflow: hidden;
 }
 
 /* .panier {
@@ -176,7 +175,7 @@ body {
   z-index: 4;
 }
 
-@media screen and (min-width: 375px) and (max-width: 389px){
+/* @media screen and (min-width: 375px) and (max-width: 389px){
   .stand img {
     top: 412px;
     left: 47%;
@@ -223,7 +222,7 @@ body {
     height: 65%;
   }
   
-}
+} */
 
 .ground img {
   width: 148%;

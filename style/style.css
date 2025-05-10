@@ -315,7 +315,7 @@ body {
 
 @media screen and (min-width: 375px) and (max-width: 389px){
   .value-phrase {
-    top: 122px;
+    top: 102px;
     font-size: 1.5rem;
   }
   
@@ -328,7 +328,7 @@ body {
 }
 @media screen and (min-width: 390px) and (max-width: 399px){
   .value-phrase {
-    top: 195px;
+    top: 170px;
     font-size: 1.5rem;
   }
   .stand img {
@@ -340,7 +340,7 @@ body {
 }
 @media screen and (min-width: 400px) and (max-width: 413px){
   .value-phrase {
-    top: 220px;
+    top: 194px;
     font-size: 1.5rem;
   }
   .stand img {
@@ -351,7 +351,7 @@ body {
 }
 @media screen and (min-width: 414px) and (max-width: 424px){
   .value-phrase {
-    top: 215px;
+    top: 190px;
     font-size: 1.5rem;
   }
   .stand img {
@@ -362,7 +362,7 @@ body {
 }
 @media screen and (min-width: 425px) and (max-width: 430px){
   .value-phrase {
-    top: 231px;
+    top: 206px;
     font-size: 1.5rem;
   }
   .stand img {

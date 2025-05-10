@@ -16,6 +16,7 @@
   font-family:  "Tagesschrift", system-ui;
   font-style: normal;
   outline: none;
+  user-select:none;
 }
 
 html {
@@ -109,8 +110,22 @@ body {
 
 .logo img {
   width: fit-content;
-  height: 93px;
 }
+
+
+
+@media screen and (min-width: 1400px){
+
+  .logo img {
+    height: 93px;
+  }
+
+}
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  
+
+}
+
 .logo p{
   position: relative;
   top: -3px;
@@ -120,6 +135,138 @@ body {
   font-weight: 600;
   text-shadow:3px 5px 2px rgba(0, 0, 0, 0.15)
 }
+
+
+.value-phrase {
+  display: flex; /* Aligns letters (spans) in a row */
+  position: absolute; 
+  font-size: 3rem; /* Base size of the text */
+  font-weight: bold; /* Makes the font a bit bolder */
+  cursor: default;   /* Default cursor for the container */
+  user-select: none; /* Prevents text selection during interaction */
+  z-index: 10;
+  top: 26px;
+}
+
+.value-phrase span {
+  display: inline-block; /* Allows transforms and padding to work correctly */
+  padding: 0 0.05em;    /* Small spacing between letters, adjust as needed */
+  /* cursor: pointer;      Pointer cursor for individual letters */
+
+  /* Text color is managed by an animated background gradient clipped to the text */
+  color: transparent; /* Hides the actual text color, making the background visible through the clip */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /*
+    The gradient defines the two colors: forestgreen (target) and black (initial).
+    It's twice the width of the letter to allow for a sliding effect.
+  */
+  background-image: linear-gradient(to right, #69a742  50%, black 50%);
+  background-size: 200% 100%;
+  background-position: 100%;   /* Initially, the right half (black) of the gradient is visible */
+
+  /*
+    Transitions for smooth changes:
+    - background-position: Handles the color change for the whole phrase and reversion.
+    - transform: Handles the scaling effect for prominence.
+    */
+    transition: background-position 0.6s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+
+/* Class for the space character, can be used for specific styling if desired */
+.value-phrase span.space {
+    padding: 0 0.2em; /* Example: Wider padding for the space character */
+    /* If you don't want the space to animate or scale, you could add: */
+    /* transform: none !important; */
+    /* animation: none !important; */
+    /* background-image: none !important; color: black !important; */
+  }
+
+
+@media screen and (min-width: 695px){
+
+.value-phrase span{
+  cursor: pointer; /* Individual letters are hoverable/clickable */
+}
+
+/* 1. When the entire phrase container is hovered */
+.value-phrase:hover span {
+  /* All letters in the phrase transition to green. */
+  /* This is done by shifting the background gradient to reveal its green part. */
+  background-position: 0%; /* Moves gradient to show the left half (green) */
+}
+
+  
+/* 2. When an individual letter is hovered */
+.value-phrase span:hover {
+  transform: scale(1.25); /* Makes the hovered letter larger (prominent) */
+
+  /*
+    The LTR (Left-To-Right) color change animation for this specific letter.
+    This animation overrides 'background-position' from the container's hover effect for this letter.
+    'forwards' ensures the letter stays at the animation's end state (green) after it finishes,
+    as long as the letter remains hovered.
+  */
+  animation: letterSwipeToGreenAnimation 0.4s forwards;
+
+  /* Ensures the scaled letter appears on top if there's any overlap with neighbors */
+  position: relative; /* Required for z-index to take effect */
+  z-index: 1;
+}
+}
+
+@media screen and (max-width: 694px){
+  .value-phrase {
+    cursor: pointer; /* The whole phrase div is clickable on mobile */
+  }
+  .value-phrase span {
+    cursor: inherit; /* Spans inherit the pointer cursor from the parent div */
+  }
+
+  /* Disable desktop-specific hover effects on individual letters for mobile */
+  .value-phrase span:hover {
+    transform: none; /* No scaling on hover */
+    animation: none; /* No individual letter swipe animation on hover */
+    /* The background-position on hover is not applied here;
+       it's controlled by the .phrase-is-green class on click. */
+  }
+  /* Note: .value-phrase:hover span rules from the desktop media query are not active here. */
+
+
+  /* This class is added by JavaScript on click to make the phrase green */
+  .value-phrase.phrase-is-green span {
+    background-position: 0%; /* All spans transition to show green */
+  }
+  /* When .phrase-is-green is removed by JavaScript, spans will transition
+     back to background-position: 100% (black) due to their base transition. */
+}
+
+
+/* Keyframe animation for the individual letter's LTR color swipe */
+@keyframes letterSwipeToGreenAnimation {
+  0% {
+    /*
+      Start the swipe from the right end of the gradient (black side).
+      This forces the letter to begin its color change from black (or its appearance),
+      ensuring the LTR fill effect is clearly visible from left to right,
+      even if the whole phrase was already turning green.
+    */
+    background-position: 100%;
+  }
+  100% {
+    /*
+      End the swipe with the left end of the gradient (green side) fully visible.
+      The letter is now entirely green, filled from left to right.
+    */
+    background-position: 0%;
+  }
+}
+
+
+
+
 
 .ground{
   display: flex;
@@ -147,29 +294,6 @@ body {
 
 
 
-h1{
-  font-size: 4.3em;
-  position: absolute;
-  bottom: 34px;
-  right: 173px;
-  transform: scale(1.5) skew(26deg, 359deg);
-  font-weight: 100;
-  user-select: none;
-  z-index: 5;
-
-  font-family:"DK Uncle Edward";
-
-  
-  text-shadow:   
-  -1px  1px 1px rgb(44, 44, 44),
-  -2px  2px 1px rgb(44, 44, 44),
-  -3px  3px 1px rgb(44, 44, 44),
-  -4px  4px 1px rgb(44, 44, 44),
-  -5px  5px 1px rgb(44, 44, 44),
-  -6px  6px 1px rgb(44, 44, 44),
-  -7px  7px 1px rgb(44, 44, 44);
-}
-
 
 
 .stand{
@@ -182,7 +306,7 @@ h1{
 
 .stand img{
   position: absolute;
-  top: 544px;
+  top: 575px;
   left: 49%;
   transform: translate(-50%, -50%);
   height: 84%;
@@ -190,74 +314,61 @@ h1{
 }
 
 @media screen and (min-width: 375px) and (max-width: 389px){
+  .value-phrase {
+    top: 122px;
+    font-size: 1.5rem;
+  }
+  
   .stand img {
     top: 400px;
     left: 47%;
     height: 65%;
   }
   
-  h1{
-    font-size: 1.3em;
-    position: absolute;
-    bottom: 64px;
-    right: 28px;
-    transform: scale(1.5) skew(26deg, 359deg);
-  }
 }
 @media screen and (min-width: 390px) and (max-width: 399px){
+  .value-phrase {
+    top: 195px;
+    font-size: 1.5rem;
+  }
   .stand img {
     top: 535px;
     left: 47%;
     height: 56%;
   }
-  h1{
-    font-size: 1.3em;
-    position: absolute;
-    bottom: 89px;
-    right: 28px;
-    transform: scale(1.5) skew(26deg, 359deg);
-  }
+
 }
 @media screen and (min-width: 400px) and (max-width: 413px){
+  .value-phrase {
+    top: 220px;
+    font-size: 1.5rem;
+  }
   .stand img {
     top: 573px;
     left: 47%;
     height: 58%;
   }
-  h1{
-    font-size: 1.3em;
-    position: absolute;
-    bottom: 99px;
-    right: 39px;
-    transform: scale(1.5) skew(26deg, 359deg);
-  }
 }
 @media screen and (min-width: 414px) and (max-width: 424px){
+  .value-phrase {
+    top: 215px;
+    font-size: 1.5rem;
+  }
   .stand img {
     top: 545px;
     left: 47%;
     height: 65%;
   }
-  h1{
-    font-size: 1.3em;
-    position: absolute;
-    bottom: 88px;
-    right: 28px;
-    transform: scale(1.5) skew(26deg, 359deg);
-  }
 }
 @media screen and (min-width: 425px) and (max-width: 430px){
+  .value-phrase {
+    top: 231px;
+    font-size: 1.5rem;
+  }
   .stand img {
     top: 583px;
     left: 47%;
     height: 55%;
-  }
-  h1{
-    font-size: 1.3em;
-    position: absolute;
-    bottom: 84px;
-    right: 44px;
-    transform: scale(1.5) skew(26deg, 359deg);
   }
 }
 @media screen and (min-width: 431px) and (max-width: 767px){
@@ -266,13 +377,7 @@ h1{
     left: 47%;
     height: 65%;
   }
-  h1{
-    font-size: 1.3em;
-    position: absolute;
-    bottom: 84px;
-    right: 28px;
-    transform: scale(1.5) skew(26deg, 359deg);
-  }
+
 }
 
 .ground img {
@@ -315,14 +420,14 @@ h1{
 } */
 
 .container {
-  position: relative;
-  width: 700px;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: -89px;
-  z-index: 5;
+    position: relative;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -26px;
+    z-index: 5;
 }
 
 .container:fullscreen {

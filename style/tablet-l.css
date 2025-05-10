@@ -23,12 +23,13 @@
 .down_stand img{
   left: 60%;
 } */
+.logo img {
+  height: 70px;
+}
 
-h1{
-  font-size: 2.5em;
-  bottom: 33px;
-  right: 71px;
-  transform: scaleX(1.5)  skew(26deg, 359deg);
+.value-phrase {
+  top: 137px;
+  font-size: 2.5rem;
 }
 
 .ground img {

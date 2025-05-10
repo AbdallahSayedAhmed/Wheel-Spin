@@ -9,6 +9,7 @@ const title = document.querySelector(".title");
 const button = document.querySelector(".spinBtn");
 const description = document.querySelector(".description");
 const imagePopup = document.querySelector(".popup-icon");
+const valuePhrase = document.querySelector(".value-phrase");
 
 // Improved shuffle function with Fisher-Yates algorithm
 function shuffle(array) {
@@ -36,6 +37,7 @@ function spin() {
   wheell.play();
   wheel.classList.add("disable-fun");
   button.classList.add("disable-fun");
+  valuePhrase.classList.add("disable-fun");
   
   let selectItem = "";
   
@@ -98,6 +100,7 @@ function spin() {
     applause.play();
     wheel.classList.remove("disable-fun");
     button.classList.remove("disable-fun");
+    valuePhrase.classList.remove("disable-fun");
 
     overlay.classList.add("active");
     popup.classList.add("active");
@@ -210,3 +213,60 @@ if (!document.fullscreenElement) {
 }
 
 
+
+// animation of sentance in mobile screen
+
+document.addEventListener('DOMContentLoaded', () => {
+  const valuePhrase = document.querySelector('.value-phrase');
+  let animationTimeoutId = null; // Stores ID for setTimeout to revert color
+  let isAnimatingMobile = false; // Flag to manage mobile click animation state
+
+  // Duration settings for mobile click animation
+  const DURATION_GREEN_STATE_MOBILE = 6000; // ms: How long phrase stays green after click
+  const CSS_TRANSITION_DURATION_MOBILE = 600; // ms: Must match CSS transition for background-position (0.6s)
+
+  valuePhrase.addEventListener('click', () => {
+    // Check if the click action is for mobile view (screen width <= 694px)
+    if (window.innerWidth <= 694) {
+      if (isAnimatingMobile) {
+        // If an animation sequence (green -> wait -> black) is already active, do nothing.
+        return;
+      }
+      isAnimatingMobile = true; // Lock to prevent re-triggering during this sequence
+
+      // Clear any previously set timeout (safety measure)
+      if (animationTimeoutId) {
+        clearTimeout(animationTimeoutId);
+      }
+
+      // 1. Animate to green: Add class; CSS transition handles the LTR effect
+      valuePhrase.classList.add('phrase-is-green');
+
+      // 2. Set timer to start reverting to black
+      // The DURATION_GREEN_STATE_MOBILE is the time from the click
+      // until the phrase *starts* turning back to black.
+      animationTimeoutId = setTimeout(() => {
+        valuePhrase.classList.remove('phrase-is-green'); // Triggers CSS transition back to black
+        
+        // Allow another animation sequence only after the "turn black" transition completes
+        setTimeout(() => {
+          isAnimatingMobile = false; // Unlock after full sequence
+        }, CSS_TRANSITION_DURATION_MOBILE);
+
+      }, DURATION_GREEN_STATE_MOBILE);
+    }
+  });
+
+  // Optional: Handle resize events to reset mobile animation state if moving to desktop view
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 694) { // Resized to desktop view
+      if (isAnimatingMobile) { // If a mobile animation sequence was active
+        clearTimeout(animationTimeoutId); // Clear the pending reversion to black
+        valuePhrase.classList.remove('phrase-is-green'); // Immediately remove green state
+        isAnimatingMobile = false; // Reset the animation lock
+      }
+    }
+    // No specific action needed for resizing from desktop to mobile,
+    // CSS media queries will handle style changes, and click listener will become active.
+  });
+});

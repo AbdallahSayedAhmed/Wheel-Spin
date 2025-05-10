@@ -9,8 +9,7 @@
   flex-direction: column;
 }
 .logo img {
-  width: fit-content;
-  height: 55px;
+  height: 78px;
 }
 .logo p{
   left: 0px;
@@ -22,7 +21,7 @@
   width: 330px;
   height: 330px;
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -162,6 +161,10 @@
   }
 }
 @media screen and (min-width: 460px) and (max-width: 569px){
+  .value-phrase {
+    top: 161px;
+    font-size: 2.2rem;
+  }
   .container{
     width:400px;
     height:400px;
@@ -284,6 +287,11 @@
 }
 
 @media screen and (min-width: 570px) {
+  .value-phrase {
+    top: 232px;
+    font-size: 2.5rem;
+  }
+  
   .container{
     width:450px;
     height:450px;
@@ -584,6 +592,10 @@
 }
 
 @media (min-width: 695px){
+  .value-phrase {
+    top: 171px;
+    font-size: 2.5rem;
+  }  
   .upper_stand img{
     top: 68px;
   }

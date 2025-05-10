@@ -1,6 +1,6 @@
 .container {
   position: absolute;
-  top: 46%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -11,22 +11,19 @@
 
 
 
-
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-
   
   .logo p{
     left: -26px;
   }
+  
+  .logo img {
+    height: 73px;
+  }
+
   .container {
     width: 700px;
     height: 700px;
-  }
-
-  h1{
-    bottom: 34px;
-    right: 89px;
-    transform: scale(1.2) skew(26deg, 359deg);
   }
 
   .container .wheel .jobName span {
